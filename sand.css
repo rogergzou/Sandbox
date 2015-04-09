@@ -8,6 +8,8 @@ body {
 
 .code-back {
     background-color:black;
+    height:70vh;
+    text-shadow: 0 0 0 black;
 }
 
 .explanation {
