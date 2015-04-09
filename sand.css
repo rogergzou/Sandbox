@@ -1,3 +1,8 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 #sblogo {
     height:109px;
     width:371px;
@@ -28,6 +33,16 @@ body {
 .actual-code {
     color:white;
     font-family: "Courier New", Monospace;
+}
+
+.next-button {
+    background-color: green;
+    padding: 10px 7px;
+    color:white;
+    text-decoration:none;
+    margin-top:10px;
+    display:block;
+    width:37px;
 }
 
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
