@@ -18,19 +18,20 @@ body {
 }
 
 .example-code {
-    font-family: "Courier New", Monospace;
 }
 
 .code-comment {
-    color:green
+    color:green;
+    font-family: Arial, Verdana, Sans-serif;
 }
 
 .actual-code {
-    color:white
+    color:white;
+    font-family: "Courier New", Monospace;
 }
 
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
     p {
-        color:blue
+        color:blue;
     }
 }
