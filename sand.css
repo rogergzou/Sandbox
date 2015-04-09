@@ -1,10 +1,30 @@
-p {
-    color:red
-}
-
 #sblogo {
     height:109px;
     width:371px;
+}
+body {
+    width:auto;
+}
+
+.code-back {
+    background-color:black;
+}
+
+.explanation {
+    font-family: "Times New Roman", Times, serif;
+    height:30vh;
+}
+
+.example-code {
+    font-family: "Courier New", Monospace;
+}
+
+.code-comment {
+    color:green
+}
+
+.actual-code {
+    color:white
 }
 
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
