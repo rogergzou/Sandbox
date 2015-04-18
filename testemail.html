@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+<script>
+    setContent(); 
+    </script>
 
     <style>
     body{
@@ -37,7 +42,7 @@
         <div data-role="navbar">
           <ul>
             <li><a href="weatherapi.html">Back</a></li>
-            <li><a href="#">Weather API</a></li>
+            <li><a href="#">Core Function Coding</a></li>
             <li><a href="projectlist.html">Menu</a></li>
           </ul>
         </div>
@@ -46,37 +51,25 @@
         </div>
             
              <div data-role="main" class="ui-content">
-        <h3>Customize your email:</h3>
+
+            
+        <h4>Determine under what circumstance and what content to send users. HINT: console.log() is a function inside which is the content you want to display.</h4>
+        <p>location = Cambridge;//location is a variable in weather API<br></p> 
+
         <form>
-        if (temperature < 
-        <input type="text" name="temperature">
-        ) <br> console.log (
-        <input type="text" name="message1">);
+        <input type="text" name="if" id="_if" maxlength="2" size="2" style="width:48px;"/> 
+        ( <input type="text" name="weather" id="_weather" maxlength="7" size="7" style="width:144px;"/> == rainy
+        ) <br> {<br>console.log (
+        <input type="text" name="message1" id="message1"/>);<br>}
         <br>
-        else 
-        <br>console.log(
-        <input type="text" name="message2">
-        );
+        <input type="text" name="else" id="_else" maxlength="4" size="4" style="width:48px;"/>
+        <br>{<br>console.log(
+        <input type="text" name="message2" id="message2"/>
+        );<br>}
         <br><br>
         </form>
-        <br>
-        <form>
-        if (precipitation == 
-        <input type="text" name="weather">
-        ) <br> console.log (
-        <input type="text" name="message3">);
-        </form>
-        <br>
-        <form>
-        <strong>Insert your email:</strong>
-        <input type="text" name="email">
-        </form>
-        <form>
-        <strong>Sendout Time:</strong>
-        <input type="text" name="time">
-        </form>
         
-        <a href="previewemail.html" data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Preview email!</a>
+        <a href="previewemail.html"  onclick="javascript:setContent(); return false;" id="preview" data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Preview APP!</a>
         </div>
         </div>
 
