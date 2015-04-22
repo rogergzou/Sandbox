@@ -9,14 +9,36 @@
     <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 
-<script>
-    setContent(); 
+<script type="text/javascript">
+    // setContent(); 
     </script>
 
+    <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=159303(font-family=Museo+Sans+500)&sid=159305(font-family=Museo+Sans+300)&sid=159306(font-family=Museo+Sans+700)&key=bzksmnhYhe',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+
     <style>
+
+
     body{
         background-color: #E6E6FA;
+
+        font-family: 'Museo Sans 500';
+        font-family: 'Museo Sans 300';
+        font-family: 'Museo Sans 700';
+
+        font-weight: normal !important;
     }
+
     .header img {
     float: center;
      width: 340px;
@@ -31,45 +53,58 @@
     background: transparent;
     }
 
+    .custom-btn {
+        margin-left: 200px!important;
+        width: 100px !important;
+        border:none;
+        background:#28ad50;
+        color:white !important;
+        font-family:'Museo Sans 700';
+    }
+
     </style>
 
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" style="background:#f9c14d;">
  
-      <div data-role="header">
-        
-        <div data-role="navbar">
-          <ul>
-            <li><a href="weatherapi.html">Back</a></li>
-            <li><a href="#">Core Function Coding</a></li>
-            <li><a href="projectlist.html">Menu</a></li>
-          </ul>
-        </div>
-        <progress value="50" max="100" style="width:100%;">
-        </progress>
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#f9c14d;border:none!important; outline:0;">
+
+        <a href="weatherapi.html" class="ui-btn  ui-btn-icon-left ui-icon-myback ui-btn-icon-notext"><img src="images/back.png" style="width:17px;height:20px;padding-left:20px;padding-top:6px;"/></a>
+        <h1 style="padding-top:16px;font-family:'Museo Sans 700'; font-size:20px;"><strong>APP  Coding</strong></h1>
+        <a href="projectlist.html" class="ui-btn  ui-btn-icon-right ui-icon-mymenu ui-btn-icon-notext"><img src="images/menu.png" style="width:7px;height:20px;padding-right:32px;padding-top:6px;"/></a>
+       <!--  <progress value="50" max="100" style="width:100%; padding-top:44px;">
+        </progress> -->
+
         </div>
             
-             <div data-role="main" class="ui-content">
-
+             <div data-role="main" class="ui-content" style="font-family:'Museo Sans 500';">
             
-        <h4>Determine under what circumstance and what content to send users. HINT: console.log() is a function inside which is the content you want to display.</h4>
-        <p>location = Cambridge;//location is a variable in weather API<br></p> 
+        <h4>Determine under what circumstance and what content to send users. <br><span style="color:#858181;">HINT: console.log() is a function inside which is the content you want to display.</span></h4>
 
-        <form>
-        <input type="text" name="if" id="_if" maxlength="2" size="2" style="width:48px;"/> 
-        ( <input type="text" name="weather" id="_weather" maxlength="7" size="7" style="width:144px;"/> == rainy
-        ) <br> {<br>console.log (
-        <input type="text" name="message1" id="message1"/>);<br>}
+        <div class="learning" style="background:white; padding-left:10px; padding-right:10px;border-radius:15px;">
+
+        <p style="padding-top:10px;color:#28ad50;">var location = Cambridge;<br></p> 
+
+        <form style="color:#28ad50;">
+        <input type="text" name="if" id="_if" maxlength="2" size="2" style="width:140px;" placeholder="fill in a condition"/>
+        ( <input type="text" name="weather" id="_weather" maxlength="7" size="7" style="width:144px;" placeholder="a variable name"/> == rainy
+        ) {  console.log (
+        <input type="text" name="message1" id="message1" placeholder="customize the message you want to send"/>);}
         <br>
-        <input type="text" name="else" id="_else" maxlength="4" size="4" style="width:48px;"/>
-        <br>{<br>console.log(
-        <input type="text" name="message2" id="message2"/>
-        );<br>}
+        <input type="text" name="else" id="_else" maxlength="4" size="4" style="width:140px;" placeholder="a condition"/>
+        {  console.log(
+        <input type="text" name="message2" id="message2" placeholder="customize in the message you want to send"/>
+        );}
         <br><br>
         </form>
+
+        <a href="previewemail.html" onclick="javascript:setContent(); return false;" id="preview" data-role="button" class="custom-btn">NEXT</a>
+        <br>
+
+        </div>
         
-        <a href="previewemail.html"  onclick="javascript:setContent(); return false;" id="preview" data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Preview APP!</a>
+        <!-- <a href="previewemail.html"  onclick="javascript:setContent(); return false;" id="preview" data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Preview APP!</a> -->
         </div>
         </div>
 
