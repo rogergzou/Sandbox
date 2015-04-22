@@ -16,14 +16,20 @@
 </head>
 <body>
 <div class="explanation">
-    <p>For this project, your variable will be an image you want to set as your wallpaper. You can use the drawImage() function to show the image you’re referring to. </p>
+    <p>Your variable can store not just values, but objects like images as well! Once an object has been stored in a variable, the variable can be used to refer to the object and to change and access the object's properties. </p>
 </div>
 <div class="code-back">
-<div class="example-code">
-    <p class="code-comment">Var img stores a new image<br/>
-Img.src links to the image <br/>
-drawImage(img) displays the image.<p>
-    <p class="actual-code">var img = wait a second...</p>
+    <div class="example-code">
+        <p class="code-comment">We demonstrate how to create a new Image Object with the Image() method.<br/> 
+        The Image Object has a property that we can modify, "src", which tells the Image Object where the image it should display is stored on the computer (in this case, the Photos folder and is named "rainy.jpg").<br/>
+        This variable can stand in for the Image Object for everything. If we want to call a method using the Image Object as the input, we can simply use the variable to refer to it and take its place. </p>
+    <p class="actual-code">var img = new Image(); <br/>
+img.src = "Photos/rainy.jpg"; <br/>
+displayImage(img);</p>
+    <p class="code-comment">Var img stores a new Image Object we just created<br/>
+Img.src tells the Image Object where to find the Image to display <br/>
+displayImage(img) calls the displayImage method and tells it to display the Image Object stored at variable img.<p>
+
 </div>
 <a href="wp-ifelse1.html" class="next-button">Next</a>
 </div>
