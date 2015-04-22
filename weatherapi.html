@@ -9,9 +9,29 @@
     <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=159303(font-family=Museo+Sans+500)&sid=159305(font-family=Museo+Sans+300)&sid=159306(font-family=Museo+Sans+700)&key=bzksmnhYhe',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+
     <style>
+
     body{
         background-color: #E6E6FA;
+
+        font-family: 'Museo Sans 500';
+        font-family: 'Museo Sans 300';
+        font-family: 'Museo Sans 700';
+
+        font-weight: normal !important;
     }
     .header img {
     float: center;
@@ -26,16 +46,23 @@
     height: 128px;
     background: transparent;
     }
+    .custom-btn {
+        margin-left: 200px!important;
+        width: 100px !important;
+        border:none;
+        background:#28ad50;
+        color:white !important;
+        font-family:'Museo Sans 700';
+    }
 
     </style>
 
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" style="background:#f9c14d;">
  
-      <div data-role="header">
-        
-        <div data-role="navbar">
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#f9c14d;border:none!important; outline:0;">
+        <!-- <div data-role="navbar">
           <ul>
             <li><a href="makeapp.html">Back</a></li>
             <li><a href="#">Weather API</a></li>
@@ -44,11 +71,15 @@
         </div>
         <progress value="25" max="100" style="width:100%;">
         </progress>
-        </div>
+        </div> -->
+ 
+ <a href="makeapp.html" class="ui-btn  ui-btn-icon-left ui-icon-myback ui-btn-icon-notext"><img src="images/back.png" style="width:17px;height:20px;padding-left:20px;padding-top:6px;"/></a>
+        <h1 style="padding-top:16px;font-family:'Museo Sans 700'; font-size:20px;"><strong>APP  Coding</strong></h1>
+        <a href="projectlist.html" class="ui-btn  ui-btn-icon-right ui-icon-mymenu ui-btn-icon-notext"><img src="images/menu.png" style="width:7px;height:20px;padding-right:32px;padding-top:6px;"/></a> </div>      
             
              <div data-role="main" class="ui-content">
         <h3>Your first step is grabbing weather information from a weather API.</h3>
-        <div class="explanation" style="background:#504e4e; width:100%; margin:0;padding:0;height:500px;color:white">
+        <div class="explanation" style="background:white; padding-left:10px; padding-right:10px;border-radius:15px;">
         <p><br>You've probably wondering: how does your program know what the weather is today?
         <br>It is pulling information from something called an API, or application programming interface! An API allows you to access data from other sources. Today we are using a weather API !
         <br><br><br>
@@ -58,11 +89,12 @@
         <br><br><br>
         </p>
         <img src="images/Apps-Google-Maps-icon.png" alt="logo" /><br><br><br>
-        <a href="testemail.html" data-role="button" data-theme="b"  style="width:100px;background:green;float:right;">Next</a>
+        <a href="testemail.html" onclick="javascript:setContent(); return false;" id="preview" data-role="button" class="custom-btn">NEXT</a>
+        <br>
         </div>
         </div>
 
-
+<div data-role="main" class="ui-content" style="font-family:'Museo Sans 500';">
 
         
        
