@@ -44,6 +44,10 @@ body {
     display:block;
     width:37px;
 }
+
+.ui-input-text {
+    width:75px;
+}
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
     p {

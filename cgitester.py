@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import cgi
+
+form = cgi.FieldStorage()
+
+print "Content-Type: text/html"
+print
+print "<TITLE>CGI script output</TITLE>"
+print "<H1>This is my first CGI script</H1>"
+print "Hello, world!"

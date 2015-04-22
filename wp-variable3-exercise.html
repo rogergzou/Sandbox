@@ -13,18 +13,21 @@
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet" href="sand.css">
+<script src="main.js"></script>
 </head>
 <body>
     <div class="explanation">
         <p>Try it yourself! Edit the variable name and choose a photo to display! <br/>
         There are two images on file: a "snow.jpg" and a "sleepy.jpg". Both are in the "images/" folder. Try to display one of them!
     </div>
-    <form class="code-back" name="img" action="wp-variable4.py" method="GET">
-        <div class="example-code">
+    <form class="code-back" name="img" action="wp-variable4.html" method="GET">
+        <div class="example-code ui-grid-a">
             <p class="code-comment"></p>
-            <p class="actual-code">var img = new Image(); <br/>
-            <input type="text" name"varname1"/>.src = <input type="text" name="s1"/><br/>
-            drawImage( <input type="text" name="varname2"/></p>
+            <div class="actual-code">
+            <div data-role="fieldcontain"><label>var </label><input data-inline="true" type="text" name="varname0"/><label> = new Image();</label> <br/></div>
+            <input type="text" name="varname1">.src = <input type="text" name="imgsrc"><br/>
+            drawImage( <input type="text" name="varname2">
+            </div>
         </div>
         <input type="submit" class="next-button" value="Submit">
         <!--<a href="previewemail.html" class="next-button">Next</a>-->
