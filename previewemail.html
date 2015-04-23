@@ -13,6 +13,19 @@
     sendMail(); 
     </script>
 
+    <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=159303(font-family=Museo+Sans+500)&sid=159305(font-family=Museo+Sans+300)&sid=159306(font-family=Museo+Sans+700)&key=bzksmnhYhe',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+
     <style>
     body{
         background-color: #E6E6FA;
@@ -31,30 +44,34 @@
     background: transparent;
     }
 
+    .custom-btn {
+        margin-left: 200px!important;
+        width: 300px !important;
+        border:none;
+        background:#28ad50;
+        color:white !important;
+        font-family:'Museo Sans 700';
+    }
+
     </style>
 
 
 
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" style="background:#f9c14d;">
  
-      <div data-role="header">
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#f9c14d;border:none!important; outline:0;">
         
-        <div data-role="navbar">
-          <ul>
-            <li><a href="testemail.html">Back</a></li>
-            <li><a href="#">Umbrella Reminder</a></li>
-            <li><a href="projectlist.html">Menu</a></li>
-          </ul>
-        </div>
-        <progress value="100" max="100" style="width:100%;">
-        </progress>
+        <a href="testemail.html" class="ui-btn  ui-btn-icon-left ui-icon-myback ui-btn-icon-notext"><img src="images/back.png" style="width:17px;height:20px;padding-left:20px;padding-top:6px;"/></a>
+        <h1 style="padding-top:16px;font-family:'Museo Sans 700'; font-size:20px;"><strong>Umbrella Reminder</strong></h1>
+        <a href="projectlist.html" class="ui-btn  ui-btn-icon-right ui-icon-mymenu ui-btn-icon-notext"><img src="images/menu.png" style="width:7px;height:20px;padding-right:32px;padding-top:6px;"/></a>
+
         </div>
             
              <div data-role="main" class="ui-content">
         
-             <p><strong>Your Location is Cambridge.</strong></p>
+             <h3><strong>Your Location is Cambridge.</strong></h3>
 
              <br><br>
 
@@ -62,7 +79,7 @@
         <strong>Insert your email:</strong>
         <input type="text" name="email" id="email"/>
         </form>
-
+        <br>
         <!-- <form>
         <strong>Sendout Time:</strong>
         <input type="text" name="time">
@@ -70,7 +87,8 @@
         
        <!--  <button onclick="sendMail(); return false">Set Reminder</button> -->
 
-       <a href="#" onclick="javascript:sendMail(); return false;" data-role="button" data-theme="b"  id="set" style="width:300px;background:green;float:right;">Set Reminder</a>
+       <a href="#" onclick="javascript:sendMail(); return false;" id="set" data-role="button" class="custom-btn">Set Reminder</a>
+       <br>
 
        <!--  <a href="mailto:you@gmail.com?Subject=Hello!%20Make%20sure%20to%20wear%20your%20snow%20boots%20today.%20It%20is%20going%20to%20snow!&amp;body=Temperature%2030.%20Wind%2030%20mph.%20Feels%20like%2023.%20Precipitation:%20Afternoon%20heavy%20snow." data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Set Reminder</a> -->
 

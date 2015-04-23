@@ -4,21 +4,21 @@
     var _else = null;
 
 
-function setContent() {
+// function setContent() {
 
-    content = document.getElementById('message2').value;
+//     content = document.getElementById('message2').value;
 
-    _if = document.getElementById('_if').value;
-    _else = document.getElementById('_else').value;
-    _weather = document.getElementById('_weather').value;
+//     _if = document.getElementById('_if').value;
+//     _else = document.getElementById('_else').value;
+//     _weather = document.getElementById('_weather').value;
 
-    if(!(_if == "if"&&_else =="else"&&_weather=="weather"))
-        alert("Check if you have errors.");
+//     if(!(_if == "if"&&_else =="else"&&_weather=="weather"))
+//         alert("Check if you have errors.");
 
 
-    console.log(content);
+//     console.log(content);
 
-    }
+//     }
 
 function sendMail() {
 
