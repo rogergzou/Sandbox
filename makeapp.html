@@ -10,9 +10,16 @@
     <script type="text/javascript" src="main.js"></script>
 
     <style>
-    body{
-        background-color: #E6E6FA;
+      body{
+        background-color: #f9c14d;
+
+        font-family: 'Museo Sans 500';
+        font-family: 'Museo Sans 300';
+        font-family: 'Museo Sans 700';
+
+        font-weight: normal !important;
     }
+
     .header img {
     float: center;
      width: 340px;
@@ -27,36 +34,56 @@
     background: transparent;
     }
 
+
+    .custom-btn {
+        margin-left: 200px!important;
+        width: 100px !important;
+        border:none;
+        background:#28ad50;
+        color:white !important;
+        font-family:'Museo Sans 700';
+    }
+
     </style>
+
+    <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=159303(font-family=Museo+Sans+500)&sid=159305(font-family=Museo+Sans+300)&sid=159306(font-family=Museo+Sans+700)&key=bzksmnhYhe',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+
 
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" style="background:#f9c14d;">
  
-      <div data-role="header">
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#f9c14d;border:none!important; outline:0;">
         
-        <div data-role="navbar">
-          <ul>
-            <li><a href="projectlist.html">Back</a></li>
-            <li><a href="#">Make an APP</a></li>
-            <li><a href="projectlist.html">Menu</a></li>
-          </ul>
-        </div>
-        <progress value="25" max="100" style="width:100%;">
-        </progress>
+        <a href="weatherapi.html" class="ui-btn  ui-btn-icon-left ui-icon-myback ui-btn-icon-notext"><img src="images/back.png" style="width:17px;height:20px;padding-left:20px;padding-top:6px;"/></a>
+        <h1 style="padding-top:16px;font-family:'Museo Sans 700'; font-size:20px;"><strong>Make An APP</strong></h1>
+        <a href="projectlist.html" class="ui-btn  ui-btn-icon-right ui-icon-mymenu ui-btn-icon-notext"><img src="images/menu.png" style="width:7px;height:20px;padding-right:32px;padding-top:6px;"/></a>
+
         </div>
             
-             <div data-role="main" class="ui-content">
+             <div data-role="main" class="ui-content" style="font-family:'Museo Sans 500';">
         <h3>It&#39s time to become a real Developer and Make an APP!</h3>
-        <div class="explanation" style="background:#504e4e; width:100%; margin:0;padding:0;height:500px;color:white">
+        <div class="explanation" style="background:white; padding-left:10px; padding-right:10px;border-radius:15px;">
         <p>
         <br>Wonder how to make a weather reminder app like WeatherBe or UmbrellaAlert ? These apps send you notification WHEN it&#39s raining based on the weather information of your current LOCATION.
         <br><br><br>
         Now we have an ongoing app project which lacks the code of the core function: determine WHEN and WHAT to notify users. We need you to implement it!
         <br><br><br>
         </p>
-        <img src="images/sigh.png" alt="picture" style="width:250px; height:260px;"> screenshot from Umbrella Alert</img><br><br><br>
-        <a href="weatherapi.html" data-role="button" data-theme="b"  style="width:100px;background:green;float:right;">Try It!</a>
+        <img src="images/sigh.png" alt="picture" style="width:250px; height:260px;"></img><br><br><br>
+        <a href="weatherapi.html" data-role="button" class="custom-btn">Try It!</a>
+        <br>
         </div>
         </div>
 

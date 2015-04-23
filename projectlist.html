@@ -1,57 +1,3 @@
-<<<<<<< HEAD
-
-<!doctype html>
-<html>
-<head>
-    <title>Sandbox</title>
-    <link rel="stylesheet" href="sand.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
-    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-
-    <style>
-    body{
-        background-color: #E6E6FA;
-    }
-    .header img {
-    float: center;
-     width: 340px;
-    height: 220px;
-    background: transparent;
-    }
-
-    </style>
-
-</head>
-<body>
-    <div data-role="page">
- 
-      <div data-role="header">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="login.html">Back</a></li>
-            <li><a href="#">Sandbox</a></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
-        </div>
-        </div>
-            
-             <div data-role="main" class="ui-content">
-        <p>Start your first project!</p>
-        </div>
-
-        <a href="wp-variable1.html" data-role="button" data-theme="b" data-icon="star">Project 1: Daily Weather Emails <p>Concepts: Variables, If-Else, API</p></a>
-        <a href="#" data-role="button" data-theme="b" data-icon="lock">Project 2: Automatic Birthday Emails</a>
-        <a href="makeapp.html" data-role="button" data-theme="b" data-icon="lock" >Weather API</a>
-        <a href="#" data-role="button" data-theme="b">Gmail API</a>
-        <a href="ranklist.html" class="textbutton">Ranklist</a>
- 
-    </div><!-- /page -->
-
-</body>
-</html>
-=======
 
 <!doctype html>
 <html>
@@ -61,11 +7,38 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+<script type="text/javascript">
+    // setContent(); 
+    </script>
+
+    <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=159303(font-family=Museo+Sans+500)&sid=159305(font-family=Museo+Sans+300)&sid=159306(font-family=Museo+Sans+700)&key=bzksmnhYhe',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
 
     <style>
+
+
     body{
-        background-color: #E6E6FA;
+        background-color: #f9c14d;
+
+        font-family: 'Museo Sans 500';
+        font-family: 'Museo Sans 300';
+        font-family: 'Museo Sans 700';
+
+        font-weight: normal !important;
     }
+
     .header img {
     float: center;
      width: 340px;
@@ -73,34 +46,67 @@
     background: transparent;
     }
 
+    .explanation img {
+
+     width: 128px;
+    height: 128px;
+    background: transparent;
+    }
+
+    .custom-btn {
+        margin-left: 20%;
+        margin-right:20%;
+        /*width: 200px !important;*/
+        border:none;
+        background:#28ad50;
+        color:white !important;
+        text-align: center;
+        font-family:'Museo Sans 700';
+    }
+
     </style>
 
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" style="background:#f9c14d;">
  
-      <div data-role="header">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="login.html">Back</a></li>
-            <li><a href="#">Sandbox</a></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
-        </div>
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#f9c14d;border:none!important; outline:0;">
+
+        <a href="login.html" class="ui-btn  ui-btn-icon-left ui-icon-myback ui-btn-icon-notext"><img src="images/back.png" style="width:17px;height:20px;padding-left:20px;padding-top:6px;"/></a>
+        <h1 style="padding-top:16px;font-family:'Museo Sans 700'; font-size:20px;"><strong>Project List</strong></h1>
+        <a href="projectlist.html" class="ui-btn  ui-btn-icon-right ui-icon-mymenu ui-btn-icon-notext"><img src="images/menu.png" style="width:7px;height:20px;padding-right:32px;padding-top:6px;"/></a>
+       <!--  <progress value="50" max="100" style="width:100%; padding-top:44px;">
+        </progress> -->
+
         </div>
             
-             <div data-role="main" class="ui-content">
-        <p>Unlocked Project. Create a project that can automatically send emails to your friends in their birthdays!</p>
+             <div data-role="main" class="ui-content" style="font-family:'Museo Sans 500';">
+            
+       <img src="images/sand.png" style="width:72px;height:79.5px;padding-top:40px;padding-left:47%;"/>
+
+        <div class="projects" style="background:white; margin-left:20px; margin-right:20px; margin-top:40px; border-radius:15px;">
+
+        <h1 style="padding-top:30px;color:#a8a8a8;font-family:'Museo Sans 700';font-size:20px;text-align: center;">Project 1<br></h1> 
+         <h1 style="color:black;font-family:'Museo Sans 700';font-size:20px;text-align: center;">Weather Reminder<br></h1> 
+         <br><br><br>
+         <h3 style="color:black;font-family:'Museo Sans 300';font-size:16px;text-align: center;">variables, if-else, API<br></h3>
+         <br><br><br>
+
+        <a href="makeapp.html" onclick="javascript:setContent(); return false;" id="preview" data-role="button" class="custom-btn">START</a>
+        <br><br><br>
+
+        </div>
+        
+        <!-- <a href="previewemail.html"  onclick="javascript:setContent(); return false;" id="preview" data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Preview APP!</a> -->
+        </div>
         </div>
 
-        <a href="wp-variable1.html" data-role="button" data-theme="b" data-icon="star">Variables</a>
-        <a href="wp-ifelse1.html" data-role="button" data-theme="b" data-icon="star">If Else</a>
-        <a href="weatherapi.html" data-role="button" data-theme="b" >Weather API</a>
-        <a href="#" data-role="button" data-theme="b">Gmail API</a>
-        <a href="#" class="textbutton">Ranklist</a>
+
+
+        
+       
  
     </div><!-- /page -->
 
 </body>
 </html>
->>>>>>> master
