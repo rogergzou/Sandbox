@@ -75,6 +75,9 @@ body {
     font-family:'Museo Sans 700';
     font-size:20px;
 }
+.yjfuhe {
+    min-height:500px;
+}
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
     p {
