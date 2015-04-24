@@ -25,25 +25,25 @@
             
              <div data-role="main" class="ui-content">
 <div class="explanation">
-    <p>Oftentimes, you want to perform different
-actions for different decisions. You can use
-conditional statements in your code to do
-this. Use if to specify a block of code to be
-executed, if a specified condition is true.
-Use else to specify a block of code to be
-executed, if the same condition is false</p>
+    <p>For example, you can use if…else statements
+to change images depending on the
+day’s temperature. Say the temperature
+today is over 75 degrees. Read the code and understand which image is displayed
+    </p>
 </div>
 <div class="code-back">
 <div class="example-code">
-    <p class="code-comment">Here's the general format:</p>
-    <p class="actual-code">if (condition) {<br/>
-    block of code to be executed if the condition is true<br/>
+    <p class="code-comment">Set the condition</p>
+    <p class="actual-code">
+If (temperature &gt;= 75) {<br/>
+        drawImage(sunny.jpg);<br/>
 }<br/>
-else {<br/> 
-    block of code to be executed if the condition is false<br/>
-}</p>
+Else {<br/>
+        drawImage(cloudy.jpg);<br/>
+}
+</p>
 </div>
-<a href="wp-ifelse2.html" class="next-button">Next</a>
+<a href="makeapp.html" class="next-button">Next</a>
 </div>
 </div>
 </div>
