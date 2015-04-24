@@ -70,6 +70,11 @@ body {
 .yjpage {
     background:#f9c14d;
 }
+.yjpagehead {
+    padding-top:16px;
+    font-family:'Museo Sans 700';
+    font-size:20px;
+}
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
     p {
