@@ -21,12 +21,12 @@
 <div class="code-back">
     <div class="example-code">
         <p class="code-comment">We demonstrate how to create a new Image Object with the Image() method.<br/> 
-        The Image Object has a property that we can modify, "src", which tells the Image Object where the image it should display is stored on the computer (in this case, the Photos folder and is named "rainy.jpg").<br/>
-        This variable can stand in for the Image Object for everything. If we want to call a method using the Image Object as the input, we can simply use the variable to refer to it and take its place. </p>
+        The Image Object has property "src" which says where the image to be displayed is (for us, the Photos folder, with name "rainy.jpg").<br/>
+        This variable stands in for the Image Object. To call a method using the Image Object as the input, use the variable to refer to it. </p>
     <p class="actual-code">var img = new Image(); <br/>
 img.src = "Photos/rainy.jpg"; <br/>
 displayImage(img);</p>
-    <p class="code-comment">Var img stores a new Image Object we just created<br/>
+    <p class="code-comment">Var img stores the created Image Object<br/>
 Img.src tells the Image Object where to find the Image to display <br/>
 displayImage(img) calls the displayImage method and tells it to display the Image Object stored at variable img.<p>
 
