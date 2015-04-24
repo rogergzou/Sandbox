@@ -48,6 +48,28 @@ body {
 .ui-input-text {
     width:75px;
 }
+
+.yjbanner {
+    background:#f9c14d;
+    border:none !important;
+    outline:0;
+}
+
+.yjbackbut {
+    width:17px;
+    height:20px;
+    padding-left:20px;
+    padding-top:6px;
+}
+.yjmenubut {
+    width:7px;
+    height:20px;
+    padding-right:32px;
+    padding-top:6px;
+}
+.yjpage {
+    background:#f9c14d;
+}
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
     p {
