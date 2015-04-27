@@ -1,3 +1,30 @@
 *-getting-started
 .DS_Store
+<<<<<<< HEAD
+
+index_old.html
+
+index.html
+
+main.js
+
+wp-variable1.html
+
+wp-variable2.html
+
+wp-variable1.html
+
+wp-variable2.html
+
+wp-variable3-exercise.html
+
+wp-variable4.html
+
+login.html
+
+previewemail.html
+
+sand.css
+=======
 *.swp
+>>>>>>> origin/gh-pages
