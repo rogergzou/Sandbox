@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
 
 <script type="text/javascript">
-    // setContent(); 
-    </script>
+    var _if = null;
+    var _weather = null;
+    var _else = null;
+
+    _if = document.getElementById('_if').value;
+    _else = document.getElementById('_else').value;
+    _weather = document.getElementById('_weather').value;
+
+    if(!(_if == "if"&&_else =="else"&&_weather=="weather"))
+        alert("Check if you have errors.");
+
+</script>
+
 
     <script type="text/javascript">
     (function() {
@@ -99,13 +109,13 @@
         <br><br>
         </form>
 
-        <!-- <a href="previewemail.html" onclick="javascript:setContent(); return false;" id="preview" data-role="button" class="custom-btn">NEXT</a> -->
+        
         <a href="previewemail.html"  id="preview" data-role="button" class="custom-btn">NEXT</a>
         <br>
 
         </div>
         
-        <!-- <a href="previewemail.html"  onclick="javascript:setContent(); return false;" id="preview" data-role="button" data-theme="b"  style="width:300px;background:green;float:right;">Preview APP!</a> -->
+        
         </div>
         </div>
 
