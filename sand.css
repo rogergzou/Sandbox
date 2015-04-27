@@ -67,6 +67,9 @@ body {
     padding-right:32px;
     padding-top:6px;
 }
+.uipage .yjpage .ui-body-c {
+    background:#f9c14d;
+}
 .yjpage {
     background:#f9c14d;
 }
