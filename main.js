@@ -2,7 +2,16 @@
     var _if = null;
     var _weather = null;
     var _else = null;
+function refreshPage()
+{
+    jQuery.mobile.changePage(window.location.href, {
+        allowSamePageTransition: true,
+        transition: 'none',
+        reloadPage: true
+    });
+}
 
+$("haihai").click(refreshPage());
 
 // function setContent() {
 
