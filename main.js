@@ -2,7 +2,7 @@
     var _if = null;
     var _weather = null;
     var _else = null;
-function refreshPage()
+/*function refreshPage()
 {
     jQuery.mobile.changePage(window.location.href, {
         allowSamePageTransition: true,
@@ -12,7 +12,7 @@ function refreshPage()
 }
 
 $("haihai").click(refreshPage());
-
+*/
 $('#wp-var4-haihai').live('pageinit', function(){
     alert("Welcome");
 });
