@@ -71,7 +71,7 @@ body {
     background:#f9c14d;
 }
 .yjpage {
-    background:#f9c14d;
+    background:#f9c14d !important;
 }
 .yjpagehead {
     padding-top:16px;
