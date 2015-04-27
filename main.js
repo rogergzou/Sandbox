@@ -11,12 +11,9 @@
     });
 }
 */
-$('haihai').click(alert("fef"));
-$("haihai").click(refreshPage());
+//$('haihai').click(alert("fef"));
+//$("haihai").click(refreshPage());
 
-$('#wp-var4-haihai').live('pageinit', function(){
-    alert("Welcome");
-});
 
 // function setContent() {
 
@@ -88,5 +85,28 @@ if ("imgsrc" in urlParams) {
         document.getElementById("wtfmate").innerHTML = strit + kkk + end;
         
 }
-}
+} 
 //};
+//
+//
+$('#wp-var4-haihai').live('pageinit', function(){
+    alert("Welcome");
+var urlParams = parseURLParams(window.location.href);
+//console.log(urlParams);
+//console.log(urlParams["varname0"][0]);
+//console.log(urlParams["imgsrc"]);
+//console.log(urlParams["imgsrc"][0]);
+if (urlParams) {
+console.log(urlParams);
+if ("imgsrc" in urlParams) {
+        var kkk = urlParams["imgsrc"][0];
+        var strit = '<img src="';
+        var end = '">';
+        console.log(strit + kkk + end);
+//document.body.innerHTML = strit + kkk + end;
+        document.getElementById("wtfmate").innerHTML = strit + kkk + end;
+        
+}
+} 
+});
+
