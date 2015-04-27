@@ -61,6 +61,86 @@
 
     </style>
 
+
+    <script>
+    var content = "default";
+    var _if = null;
+    var _weather = null;
+    var _else = null;
+
+
+// function setContent() {
+
+//     content = document.getElementById('message2').value;
+
+//     _if = document.getElementById('_if').value;
+//     _else = document.getElementById('_else').value;
+//     _weather = document.getElementById('_weather').value;
+
+//     if(!(_if == "if"&&_else =="else"&&_weather=="weather"))
+//         alert("Check if you have errors.");
+
+
+//     console.log(content);
+
+//     }
+
+function sendMail() {
+
+
+        var link = "mailto:"+escape(document.getElementById('email').value)
+             + "?cc=cs179@harvard.edu"
+             + "&subject=" + escape("Weather Reminder")
+             + "&body=" + escape(content);      
+
+
+    window.location.href = link;
+    }
+
+
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") {
+        return;
+    }
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=");
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) {
+            parms[n] = [];
+        }
+
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
+//window.onload = function what(){
+var urlParams = parseURLParams(window.location.href);
+//console.log(urlParams);
+//console.log(urlParams["varname0"][0]);
+//console.log(urlParams["imgsrc"]);
+//console.log(urlParams["imgsrc"][0]);
+if (urlParams) {
+console.log(urlParams);
+if ("imgsrc" in urlParams) {
+        var kkk = urlParams["imgsrc"][0];
+        var strit = '<img src="';
+        var end = '">';
+        console.log(strit + kkk + end);
+//document.body.innerHTML = strit + kkk + end;
+        document.getElementById("wtfmate").innerHTML = strit + kkk + end;
+}
+}
+//};
+    </script>
 </head>
 <body>
     <div data-role="page" style="background:#f9c14d;font-family:'Museo Sans 500';">
