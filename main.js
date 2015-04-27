@@ -72,6 +72,7 @@ if ("imgsrc" in urlParams) {
         console.log(strit + kkk + end);
 //document.body.innerHTML = strit + kkk + end;
         document.getElementById("wtfmate").innerHTML = strit + kkk + end;
+        
 }
 }
 //};
