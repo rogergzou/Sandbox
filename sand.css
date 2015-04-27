@@ -50,7 +50,7 @@ body {
 }
 
 .yjbanner {
-    background:#f9c14d;
+    background:#f9c14d !important;
     border:none !important;
     outline:0;
 }
