@@ -1,5 +1,6 @@
 *-getting-started
 .DS_Store
+<<<<<<< HEAD
 
 index_old.html
 
@@ -24,3 +25,6 @@ login.html
 previewemail.html
 
 sand.css
+=======
+*.swp
+>>>>>>> origin/gh-pages

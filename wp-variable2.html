@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Wallpaper Project</title>
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="sand.css">
+</head>
+<body>
+<div data-role="page" class = "yjpage">
+ 
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit yjbanner">
+<a href="wp-variable1.html" class="ui-btn  ui-btn-icon-left ui-icon-myback ui-btn-icon-notext"><img src="images/back.png" class="yjbackbut"/></a>
+        <h1 class = "yjpagehead"<strong>Variables</strong></h1>
+        <a href="projectlist.html" class="ui-btn  ui-btn-icon-right ui-icon-mymenu ui-btn-icon-notext yjmenubut"><img src="images/menu.png"/></a> </div>      
+            
+             <div data-role="main" class="ui-content">
+
+
+    <div class="explanation">
+    <p>Your variable can store not just values, but objects like images as well! Once an object has been stored in a variable, the variable can be used to refer to the object and to change and access the object's properties. </p>
+</div>
+<div class="code-back">
+    <div class="example-code">
+        <p class="code-comment">We demonstrate how to create a new Image Object with the Image() method.<br/> 
+        The Image Object has property "src" which says where the image to be displayed is (for us, the Photos folder, with name "rainy.jpg").<br/>
+        This variable stands in for the Image Object. To call a method using the Image Object as the input, use the variable to refer to it. </p>
+    <p class="actual-code">var img = new Image(); <br/>
+img.src = "Photos/rainy.jpg"; <br/>
+displayImage(img);</p>
+    <p class="code-comment">Var img stores the created Image Object<br/>
+Img.src tells the Image Object where to find the Image to display <br/>
+displayImage(img) calls the displayImage method and tells it to display the Image Object stored at variable img.<p>
+
+</div>
+<a href="wp-variable3-exercise.html" class="next-button">Next</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+

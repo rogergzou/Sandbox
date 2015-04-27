@@ -1,0 +1,90 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <title>Sandbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="sand.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+    <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=159303(font-family=Museo+Sans+500)&sid=159305(font-family=Museo+Sans+300)&sid=159306(font-family=Museo+Sans+700)&key=bzksmnhYhe',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+    </script>
+
+    <style>
+
+    
+     body{
+        background:#f9c14d;
+        font-family: 'Museo Sans 500';
+        font-family: 'Museo Sans 300';
+        font-family: 'Museo Sans 700';
+
+        font-weight: normal !important;
+    }
+
+    .header img {
+    float: center;
+     width: 340px;
+    height: 220px;
+    background: transparent;
+    }
+
+     .custom-btn {
+        /*margin-left: 40%;
+        margin-right:40%;*/
+        width: 300px;
+        border:none;
+        background:#28ad50;
+        color:white !important;
+        text-align: center;
+        font-family:'Museo Sans 700';
+    }
+
+    input{
+        /*margin-left:40%!important;*/
+        width:300px!important;
+        margin-right:10%!important;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div data-role="page" style="background:#f9c14d;font-family:'Museo Sans 500';">
+        
+        <img src='images/sandbox.png' style="width:158px;height:49px;margin-left:45%;margin-top:10%;"/>
+        <br><br><br>
+
+        <form>
+
+        <input type="text" name="userid" placeholder="User Name">
+        <br>
+        <input type="text" name="psw" placeholder="User Password">
+
+        </form>
+        <br>
+        <a href="projectlist.html" data-role="button" class="custom-btn">LogIn</a>
+        <br>
+
+        <a href="signup.html" style="margin-left:41%!important;color:#858583;">Sign Up</a>
+ 
+    </div><!-- /page -->
+
+</body>
+</html>
+
