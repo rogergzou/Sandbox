@@ -13,6 +13,10 @@ function refreshPage()
 
 $("haihai").click(refreshPage());
 
+$('#wp-var4-haihai').live('pageinit', function(){
+    alert("Welcome");
+});
+
 // function setContent() {
 
 //     content = document.getElementById('message2').value;
