@@ -10,9 +10,10 @@
         reloadPage: true
     });
 }
-
-$("haihai").click(refreshPage());
 */
+$('haihai').click(alert("fef"));
+$("haihai").click(refreshPage());
+
 $('#wp-var4-haihai').live('pageinit', function(){
     alert("Welcome");
 });
