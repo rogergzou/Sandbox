@@ -88,6 +88,7 @@ body {
         width: 100px !important;
         border:none;
         background-color:#28ad50 !important;
+        background-image:none !important;
         color:white !important;
         font-family:'Museo Sans 700';
 }
