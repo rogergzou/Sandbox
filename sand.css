@@ -103,6 +103,9 @@ body {
         background-image:none !important;
         color:white !important;
         font-family:'Museo Sans 700';
+        margin-left:auto;
+        margin-right:auto;
+        text-shadow: 0 0 0 black;
 }
 
 .aside .ui-controlgroup-controls{
@@ -141,6 +144,12 @@ white-space:nowrap;
 .rdnum {
     color:red;
     font-family: "Montzoar", "Courier New", Monospace;
+}
+.sandimg {
+    width:72px;
+    height:79.5px;
+    margin-left:auto;
+    margin-right:auto;
 }
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
