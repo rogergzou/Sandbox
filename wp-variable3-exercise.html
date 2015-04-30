@@ -12,6 +12,9 @@
 
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- Include Squirrel library for form storage/html5storage -->
+<script src="jquery.squirrel.min.js"></script>
+
 <link rel="stylesheet" href="sand.css">
 <script src="main.js"></script>
 </head>
@@ -37,9 +40,10 @@
         There are two images on file: a "snow.jpg" and a "sleepy.jpg". Both are in the "images/" folder. Try to display one of them!
     </div>
 
-    <form class="code-back" name="img" action="wp-variable4.html" method="GET" data-ajax="false">
+    <form class="code-back squirrel" name="img" action="wp-variable4.html" method="GET" data-ajax="false">
             <p class="code-comment"></p>
             <div class="actual-code">
+                <br/>
                 var
                 <input data-role="none" data-inline="true" type="text" name="varname0" placeholder="variable name"/>
                 = new Image();
