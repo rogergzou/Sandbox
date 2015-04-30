@@ -108,6 +108,9 @@ white-space:nowrap;
     }
 }
 
+.actual-code input[type="text"] {
+    width:38%;
+}
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
     p {
