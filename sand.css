@@ -94,8 +94,9 @@ body {
     min-height:500px;
 }
 
+/* see this is the ultimate annoyance */
 .custom-btn, .next-button {
-        margin-left: 200px!important;
+        /*margin-left: 200px!important; #noplz */
         width: 100px !important;
         border:none;
         background-color:#28ad50 !important;
