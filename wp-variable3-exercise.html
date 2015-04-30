@@ -36,17 +36,24 @@
         <p>Try it yourself! Edit the variable name and choose a photo to display! <br/>
         There are two images on file: a "snow.jpg" and a "sleepy.jpg". Both are in the "images/" folder. Try to display one of them!
     </div>
+
     <form class="code-back" name="img" action="wp-variable4.html" method="GET" data-ajax="false">
-        <div class="example-code ui-grid-a">
             <p class="code-comment"></p>
             <div class="actual-code">
-            <div data-role="fieldcontain"><label>var </label><input data-inline="true" type="text" name="varname0" placeholder="variable name"/><label> = new Image();</label> <br/></div>
-            <input type="text" name="varname1" placeholder="variable name">.src = <input type="text" name="imgsrc" placeholder="image file location"><br/>
-            drawImage( <input type="text" name="varname2" placeholder="variable name">
+            <div class="ui-field-contain">
+                <label for="varname0">var </label>
+                <input data-role="none" data-inline="true" type="text" name="varname0" placeholder="variable name"/>
+                = new Image();
+            </div>
+            <br/>
+            <input type="text" data-role="none"  name="varname1" placeholder="variable name">.src = 
+            <input type="text" data-role="none" name="imgsrc" placeholder="image file location"> ;
+            <br/>
+            <br/>
+            drawImage( 
+            <input type="text" name="varname2" data-role="none" placeholder="variable name"> );
             </div>
         <input type="submit" data-role="none" class="next-button ui-btn-inner ui-btn-corner-all" value="Submit">
-        <!--<a href="previewemail.html" class="next-button">Next</a>-->
-    </div>
     </form>
 </div>
 </div>

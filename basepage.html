@@ -12,9 +12,32 @@
 
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet" href="sand.css">
+<!--link rel="stylesheet" type="text/css" href="sand.css"-->
+
+<style>
+.aside .ui-controlgroup-controls{
+    width:100%;
+white-space:nowrap;    
+}
+.aside .ui-input-text {
+    box-sizing:border-box;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width:50%;
+}
+</style>
 </head>
 <body>
 
+<!--fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" class="aside">
+
+    <label>var </label><input data-inline="true" type="text" name="varname0" placeholder="variable name"/><label> = new Image();</label>
+
+    </fieldset>-->
+<div class="ui-field-contain">
+    <label for="textinput-fc">Text Input:</label>
+    <input type="text" name="textinput-fc" id="textinput-fc" data-role="none" placeholder="Text input" value="">
+</div>
 </body>
 </html>

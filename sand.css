@@ -23,28 +23,14 @@ body {
     height:30vh;
 }
 
-.example-code {
-}
-
 .code-comment {
     color:green;
     font-family: Arial, Verdana, Sans-serif;
 }
 
 .actual-code {
-    /*color:white;*/
     font-family: "Courier New", Monospace;
 }
-/*
-.next-button {
-    background-color: green;
-    padding: 10px 7px;
-    color:white;
-    text-decoration:none;
-    margin-top:10px;
-    display:block;
-    width:37px;
-}*/
 
 .ui-input-text {
     width:75px;
@@ -93,6 +79,34 @@ body {
         font-family:'Museo Sans 700';
 }
 
+.aside .ui-controlgroup-controls{
+    width:100%;
+white-space:nowrap;    
+}
+.aside .ui-input-text {
+    box-sizing:border-box;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width:50%;
+}
+
+@media all {        
+    .ui-field-contain input.ui-input-text,
+    .ui-field-contain textarea.ui-input-text,
+    .ui-field-contain .ui-input-search {
+        width: 78%;
+        display: inline-block;
+    }
+
+    .ui-field-contain label.ui-slider,
+    .ui-field-contain label.ui-input-text {
+        vertical-align: top;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+}
 
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
