@@ -9,7 +9,30 @@
 }
 body {
     width:auto;
+/* yj's frustrating style */
+    background:#f9c14d;
+/*    font-family: 'Museo Sans 500';
+    font-family: 'Museo Sans 300'; ...commented b/c you can't apply multiple...should just do font-family = primary, secondary tertiary, etc.*/
+    font-family: 'Museo Sans 700', serif;
+    font-weight: normal !important;
 }
+.header img {
+    float: center;
+    width: 340px;
+    height: 220px;
+    background: transparent;
+}
+.custom-btn {
+        /*margin-left: 40%;
+        margin-right:40%;*/
+    width: 300px;
+    border:none;
+    background:#28ad50;
+    color:white !important;
+    text-align: center;
+    font-family:'Museo Sans 700';
+}
+/*end yj */
 
 .code-back {
     background-color:white;
