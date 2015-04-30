@@ -22,7 +22,9 @@ body {
     font-family: "Times New Roman", Times, serif;
     height:30vh;
 }
-
+.example-code {
+    padding:5px;
+}
 .code-comment {
     color:green;
     font-family: Arial, Verdana, Sans-serif;
@@ -110,6 +112,11 @@ white-space:nowrap;
 
 .actual-code input[type="text"] {
     width:38%;
+}
+
+.rdnum {
+    color:red;
+    font-family: "Montzoar", "Courier New", Monospace;
 }
 /*
 @media only screen and (max-width:480px), only screen and (max-device-width:480px) {
