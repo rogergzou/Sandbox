@@ -1,4 +1,8 @@
-    var content = "default";
+function hintme() {
+    alert("hi");
+}
+
+var content = "default";
     var _if = null;
     var _weather = null;
     var _else = null;
