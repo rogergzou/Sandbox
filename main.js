@@ -1,5 +1,8 @@
 function hintme() {
-    alert("hi");
+    alert("Here's the example code from the last page:"+"\n"+
+            "var img = new Image();"+"\n"+
+            "img.src = 'Photos/rainy.jpg;'"+"\n"+
+            "displayImage(img);");
 }
 
 var content = "default";
