@@ -13,7 +13,8 @@ body {
     background:#f9c14d;
 /*    font-family: 'Museo Sans 500';
     font-family: 'Museo Sans 300'; ...commented b/c you can't apply multiple...should just do font-family = primary, secondary tertiary, etc.*/
-    font-family: 'Museo Sans 700', serif;
+   /* font-family: 'Museo Sans 700', serif;*/
+   font-family: "Times New Roman", Times, serif;
     font-weight: normal !important;
 }
 .header img {
