@@ -31,7 +31,8 @@ body {
     background:#28ad50;
     color:white !important;
     text-align: center;
-    font-family:'Museo Sans 700';
+    /*font-family:'Museo Sans 700';*/
+    font-family: "Times New Roman", Times, serif;
 }
 /*end yj */
 
@@ -88,7 +89,8 @@ body {
 }
 .yjpagehead {
     padding-top:16px;
-    font-family:'Museo Sans 700';
+    /*font-family:'Museo Sans 700';*/
+    font-family: "Times New Roman", Times, serif;
     font-size:20px;
 }
 .yjfuhe {
@@ -103,7 +105,8 @@ body {
         background-color:#28ad50 !important;
         background-image:none !important;
         color:white !important;
-        font-family:'Museo Sans 700';
+        /*font-family:'Museo Sans 700';*/
+        font-family: "Times New Roman", Times, serif;
         margin-left:auto;
         margin-right:auto;
         text-shadow: 0 0 0 black;
